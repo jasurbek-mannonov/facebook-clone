@@ -5,15 +5,30 @@
     box-sizing: border-box;
 }
 
+:root{
+    --body-color: #efefef;
+    --nav-color: #1876f2;
+    --bg-color: #fff;
+    --dark-btn: #ccc;
+}
+
+.dark-theme{
+    --body-color: #0a0a0a;
+    --nav-color: #000;
+    --bg-color: #000;
+    --dark-btn: #0a0a0a;
+}
+
 body{
- background: #efefef;       
+    background: var(--body-color);       
+    transition: background .3s;
 }
 
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #1876f2;
+    background: var(--nav-color);
     padding: 5px 5%;
     position: sticky;
     top: 0;
@@ -110,7 +125,7 @@ nav{
     position: sticky !important;
     top: 70px;
     align-items: flex-start;
-    background: #fff;
+    background: var(--bg-color);
     padding: 20px;
     border-radius: 4px;
     color: #626262;
@@ -300,7 +315,7 @@ nav{
 
 .write-post-container{
     width: 100%;
-    background: #fff;
+    background: var(--bg-color);
     border-radius: 6px;
     padding: 20px;
     color: #626262;
@@ -339,6 +354,7 @@ nav{
     border-bottom: 1px solid #ccc;
     background: transparent;
     resize: none;
+    color: #626262;
 }
 
 .add-post-links{
@@ -362,7 +378,7 @@ nav{
 
 .post-container{
     width: 100%;
-    background: #fff;
+    background: var(--bg-color);
     border-radius: 6px;
     padding: 20px;
     color: #626262;
@@ -451,12 +467,19 @@ nav{
     width: 90%;
     max-width: 350px;
     height: 500px;
-    background: #fff;
+    background: var(--bg-color);
     box-shadow: 0 0 10px rgba(0,0,0,0.4);
     border-radius: 4px;
     overflow: hidden;
     top: 108%;
     right: 5%;
+    max-height: 0;
+    transition: max-height .3s;
+    /* display: none; */
+}
+
+.settings-menu-height{
+    max-height: 450px;
 }
 
 .user-profile a{
@@ -496,4 +519,30 @@ nav{
     justify-content: space-between;
     text-decoration: none;
     color: #626262;
+}
+
+#dark-btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: var(--dark-btn);
+    width: 45px;
+    border-radius: 15px;
+    padding: 2px 3px;
+    cursor: pointer;
+    display: flex;
+    transition: padding-left .5s, background .5s;
+}
+
+#dark-btn span{
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#dark-btn.dark-btn-on{
+    padding-left: 23px;
+    background: var(--dark-btn);
 }
