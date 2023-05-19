@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bashara Buk</title>
+    <title>Bashara Buk - Profile</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a4f56be3ef.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    
     <nav>
         <div class="nav-left">
-            <a href="/">
+            <a href="index.html">
                 <img src="./images/logo.png" class="logo" alt="logo">
             </a>
             <ul>
@@ -74,51 +75,89 @@
         </div>
     </nav>
 
-    <div class="container">
-        <!-- left-sidebar -->
-        <div class="left-sidebar">
-            <div class="imp-links">
-                <a href="#"><img src="images/news.png" alt="">Latest News</a>
-                <a href="#"><img src="images/friends.png" alt="">Friends</a>
-                <a href="#"><img src="images/group.png" alt="">Group</a>
-                <a href="#"><img src="images/marketplace.png" alt="">Marketplace</a>
-                <a href="#"><img src="images/watch.png" alt="">Watch</a>
-                <a href="#">See More</a>
+    <!-- profile page-------------------->
+
+    <div class="profile-container">
+        <img src="images/cover.png" alt="cover image" class="cover-img">
+        <div class="profile-details">
+            <div class="pd-left">
+                <div class="pd-row">
+                    <img src="images/profile.png" alt="profile image" class="pd-image">
+                    <div>
+                        <h3>Jack Nicholson</h3>
+                        <p>120 Friends - 20 mutual</p>
+                        <img src="images/member-1.png" alt="member 1">
+                        <img src="images/member-2.png" alt="member 2">
+                        <img src="images/member-3.png" alt="member 3">
+                        <img src="images/member-4.png" alt="member 4">
+                    </div>
+                </div>
             </div>
-            <div class="shortcut-links">
-                <p>Your Shortcuts</p>
-                <a href="#"><img src="images/shortcut-1.png" alt="">Web Developers</a>
-                <a href="#"><img src="images/shortcut-2.png" alt="">Web Design Course</a>
-                <a href="#"><img src="images/shortcut-1.png" alt="">Full Stack Development</a>
-                <a href="#"><img src="images/shortcut-1.png" alt="">Website Experts</a>
+            <div class="pd-right">
+                <button type="button"><img src="images/add-friends.png" alt="add icon"> Friends</button>
+                <button type="button"><img src="images/message.png" alt="message icon"> Message</button>
+                <br>
+                <a href="#">
+                    <img src="images/more.png" alt="more icon">
+                </a>
             </div>
         </div>
 
-        <!-- main-content -->
-        <div class="main-content">
-            <div class="story-gallery">
-                <div class="story story1">
-                    <img src="images/upload.png" alt="">
-                    <p>Post Story</p>
+    <div class="profile-info">
+        <div class="info-col">
+            <div class="profile-intro">
+                <h3>Intro</h3>
+                <p class="intro-text">Believe in yourself and you can do unbelievable things. <img src="images/feeling.png" alt="feeling icon"></p>
+                <hr>
+                <ul>
+                    <li><img src="images/profile-job.png"> Director at International Web-developers company</li>
+                    <li><img src="images/profile-study.png"> Studied at Gulistan State University</li>
+                    <li><img src="images/profile-study.png"> Went to Jiddah</li>
+                    <li><img src="images/profile-home.png"> Lives in Makkah, Saudia</li>
+                    <li><img src="images/profile-location.png" alt=""> From Fergana, Uzbekistan</li>
+                </ul>
+            </div>
+
+            <div class="profile-intro">
+                <div class="title-box">
+                    <h3>Photos</h3>
+                    <a href="#">All Photos</a>
                 </div>
-                <div class="story story2">
-                    <img src="images/member-1.png" alt="">
-                    <p>Alison</p>
-                </div>
-                <div class="story story3">
-                    <img src="images/member-2.png" alt="">
-                    <p>Jackson</p>
-                </div>
-                <div class="story story4">
-                    <img src="images/member-3.png" alt="">
-                    <p>Simona</p>
-                </div>
-                <div class="story story5">
-                    <img src="images/member-4.png" alt="">
-                    <p>John</p>
+                <div class="photo-box">
+                    <div><img src="images/photo1.png"></div>
+                    <div><img src="images/photo2.png"></div>
+                    <div><img src="images/photo3.png"></div>
+                    <div><img src="images/photo4.png"></div>
+                    <div><img src="images/photo5.png"></div>
+                    <div><img src="images/photo6.png"></div>
                 </div>
             </div>
 
+            <div class="profile-intro">
+                <div class="title-box">
+                    <h3>Friends</h3>
+                    <a href="#">All Friends</a>
+                </div>
+                <p>120 (10 mutual)</p>
+                <div class="friends-box">
+                    <div><img src="images/member-1.png"><p>Joseph N</p></div>
+                    <div><img src="images/member-2.png"><p>Nathan N</p></div>
+                    <div><img src="images/member-3.png"><p>George D</p></div>
+                    <div><img src="images/member-4.png"><p>Francis L</p></div>
+                    <div><img src="images/member-5.png"><p>Anthony E</p></div>
+                    <div><img src="images/member-6.png"><p>Michael A</p></div>
+                    <div><img src="images/member-7.png"><p>Edward M</p></div>
+                    <div><img src="images/member-8.png"><p>Bradon C</p></div>
+                    <div><img src="images/member-9.png"><p>John Doe</p></div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+         
+        <div class="post-col">
             <div class="write-post-container">
                 <div class="user-profile">
                     <img src="images/profile-pic.png" alt="">
@@ -272,69 +311,17 @@
                     </div>
                 </div>
             </div>
-            <button type="button" class="load-more-btn">Load More</button>
-        </div>
-
-        <!-- right-sidebar -->
-        <div class="right-sidebar">
-            <div class="sidebar-title">
-                <h4>Events</h4>
-                <a href="#">See All</a>
-            </div>
-
-            <div class="event">
-                <div class="left-event">
-                    <h3>13</h3>
-                    <span>April</span>
-                </div>
-                <div class="right-event">
-                    <h4>Social Media</h4>
-                    <p><i class="fa-sharp fa-solid fa-location-dot"></i> Sillicon Walley</p>
-                    <a href="#">More Info</a>
-                </div>
-            </div>
-            <div class="event">
-                <div class="left-event">
-                    <h3>16</h3>
-                    <span>June</span>
-                </div>
-                <div class="right-event">
-                    <h4>Mobile Marketing</h4>
-                    <p><i class="fa-sharp fa-solid fa-location-dot"></i> Sillicon Walley</p>
-                    <a href="#">More Info</a>
-                </div>
-            </div>
-            <div class="sidebar-title">
-                <h4>Advertisement</h4>
-                <a href="#">Close</a>
-            </div>
-            <img src="images/advertisement.png" class="sidebar-ads">
-
-            <div class="sidebar-title">
-                <h4>Conversation</h4>
-                <a href="#">Hide Chat</a>
-            </div>
-
-            <div class="online-list">
-                <div class="online">
-                    <img src="images/member-1.png" alt="member 1">
-                </div>
-                <p>Alison Mina</p>
-            </div>
-            <div class="online-list">
-                <div class="online">
-                    <img src="images/member-2.png" alt="member 3">
-                </div>
-                <p>Jackson Aston</p>
-            </div>
-            <div class="online-list">
-                <div class="online">
-                    <img src="images/member-3.png" alt="member 3">
-                </div>
-                <p>Simona Rose</p>
-            </div>
         </div>
     </div>
+
+
+
+
+    </div>
+
+
+
+
 
     <div class="footer">
         <p>Copyright 2023 - Jasurbek Mannonov</p>
